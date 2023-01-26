@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>App - Wish List</title>
+
+    <link id="common-style" rel="stylesheet" href="/src/css/style.css">
+    <link id="wish-list-style" rel="stylesheet" href="/app/wish-list/src/css/style.css">
+    <link id="wish-list-style" rel="stylesheet" href="/app/wish-list/src/css/mobile.css">
+    <link id="wish-list-style" rel="stylesheet" href="/app/wish-list/src/css/snow.css">
+
+    <script src="https://kit.fontawesome.com/6db154f6ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="fullscreen">
+    <header>
+        <nav id="nav" class="display--flex flex-direction--row">
+            <div class="padding--1rem">
+                <a class="button round-button" href="/"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="padding--1rem">
+
+            </div>
+            <div class="padding--1rem">
+
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="snow layer1 a"></div>
+        <div class="snow layer1"></div>
+        <div class="snow layer2 a"></div>
+        <div class="snow layer2"></div>
+        <div class="snow layer3 a"></div>
+        <div class="snow layer3"></div>
+
+        <section id="head-section" class="padding--1rem">
+            <div role="section-header">
+                <h1 class="font-family--mrs-sheppards text-align--center">Wish&nbsp;App!</h1>
+            </div>
+
+            <ul id="button-list" class="list-style--none display--flex flex-direction--row gap--1rem">
+                <li class="list-item"><a class="button" href="sign-in">Connexion</a></li>
+                <li class="list-item"><a class="button" href="sign-up">Inscription</a></li>
+            </ul>
+
+            <div role="section-footer" class="display--flex flex-direction--row">
+                <div class="padding--1rem">
+                    <!-- insert content -->
+                </div>
+                <div class="padding--1rem">
+                    <!-- insert content -->
+                </div>
+                <div class="padding--1rem">
+                    <p class="text-align--right">
+                        Gif de Slim&nbsp;Jim&nbsp;Studio&nbsp;
+                        <a href="https://www.instagram.com/slimjimstudios/" target="_blank">
+                            <!-- <i class="fa-brands fa-square-instagram"></i> -->
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="register-dialog" class="hide">
+        <form id="register-form" action="POST">
+            <h2 class="font-family--mrs-sheppards text-align--center margin-bottom--1rem">Inscription</h2>
+            <div class="form-field margin-bottom--1rem">
+                <label for="username"><i class="fa-solid fa-signature"></i></label>&nbsp;
+                <input id="username" class="margin-bottom--0-5rem" type="text" name="username" placeholder="Pseudo" />
+                <small id="register-form-username-helper" class="form-helper">Form helper</small>
+            </div>
+            <div class="form-field margin-bottom--1rem">
+                <label for="email"><i class="fa-solid fa-at"></i></label>&nbsp;
+                <input id="email" class="margin-bottom--0-5rem" type="email" name="email" placeholder="Email" />
+                <small id="register-form-email-helper" class="form-helper">Form helper</small>
+            </div>
+            <div class="form-field margin-bottom--1rem">
+                <label for="password"><i class="fa-solid fa-key"></i></label>&nbsp;
+                <input id="password" class="margin-bottom--0-5rem" type="password" name="password" placeholder="Mot de passe" />
+                <small id="register-form-password-helper" class="form-helper">Form helper</small>
+            </div>
+            <div class="display--flex align-items--center justify-content--center">
+                <button type="submit" class="button font">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="/app/wish-list/src/js/app.js"></script>
+</body>
+
+</html>
