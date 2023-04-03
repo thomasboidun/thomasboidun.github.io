@@ -6,11 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thomasboidun.github.com</title>
-    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-    <h1>Hello world!</h1>
+    <main>
+        <section class="section full-screen">
+            <div class="full-width">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div id="profile-picture" class="col">
+                            <img data-profile-picture src="" alt="Profile picture" class="thumbnail round-box" />
+                        </div>
+                        <div class="col">
+                            <h1>
+                                <span data-profile-fullname>{{ profile.fullname }}</span> <span data-profile-age
+                                    class="font-weight-lighter">{{ profile.age }}</span><br />
+                                <span data-profile-job class="font-weight-lighter">{{ profile.job }}</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/profile.js"></script>
 </body>
 
 </html>
